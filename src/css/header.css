@@ -1,0 +1,50 @@
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin-bottom: 10rem;
+  color: #725c5c;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #fdf1eb;
+}
+
+.header-text p {
+  font: 16px "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.header-text .subtitle {
+  font-size: 14px;
+}
+
+.header-text .title {
+  font-size: 22px;
+  padding-top: 0.2rem;
+  line-height: 25.78px;
+}
+
+.header-text .issn {
+  font-size: 12px;
+}
+
+.dropdown {
+  border: 0.1rem solid;
+  border-radius: 0.2rem;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user p,
+.user span {
+  padding: 0;
+  margin: 0 9px 0 0;
+  text-align: end;
+  color: #333333;
+}

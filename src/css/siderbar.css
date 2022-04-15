@@ -1,0 +1,95 @@
+@media (min-width: 768px) {
+  #sidebarCollapse {
+    display: none;
+  }
+}
+
+#sidebar .teste {
+  width: 100%;
+  text-align: center;
+  height: 68px;
+  font: 20px "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 115, 0),
+    rgb(255, 228, 141)
+  );
+}
+#sidebar .teste span {
+  width: 100%;
+  text-align: center;
+}
+
+#sidebar {
+  width: 250px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  z-index: 999;
+  background: #7386d5;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+}
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: #7386d5;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386d5;
+  background-color: #fdf1eb;
+}
+
+.active {
+  color: #725c5c !important;
+  background-color: #fdf1eb !important;
+}
+
+.active::before {
+  content: " ";
+  top: 30.6rem;
+  height: 42px;
+  position: absolute;
+  left: 0px;
+  width: 5px;
+  background-image: linear-gradient(180deg, #ffb455 0%, #ed7839 100%);
+}

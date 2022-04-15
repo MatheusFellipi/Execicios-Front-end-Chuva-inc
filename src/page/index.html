@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/page.css" />
+    <link rel="stylesheet" href="../css/siderbar.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="wrapper" class="d-flex container-fluid">
+      <!-- side bar -->
+      <nav
+        id="sidebar"
+        class="d-flex flex-column flex-shrink-0 text-dark bg-light shadow"
+      >
+        <a
+          href="#"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none p-3 teste"
+        >
+          <span class="fs-4">SLACA 2019</span>
+        </a>
+
+        <img src="/public/img/slaca-13.svg" class="img-fluid" alt="..." />
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item border-bottom">
+            <a href="#" class="nav-link text-dark" aria-current="page">
+              Apresentação
+            </a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a href="#" class="nav-link text-dark"> Comitês </a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a href="#" class="nav-link text-dark"> Eixos temáticos </a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a href="#" class="nav-link active"> Trabalhos </a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a href="#" class="nav-link text-dark"> Contato </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- side bar end -->
+
+      <main class="row">
+        <!-- Cabecalho -->
+        <header
+          id="header-container"
+          class="d-flex align-items-center justify-content-space-between mb-2"
+        >
+          <div class="header-text" lass="float-sm-start">
+            <p class="subtitle">
+              Anais do Simpósio Latino Americano de Ciências de Alimentos
+            </p>
+            <p class="title">
+              Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+            </p>
+            <p class="issn">ISSN: 1234-5678</p>
+          </div>
+
+          <div
+            style="height: 34px"
+            class="d-flex align-items-center justify-content-center p-2 dropdown text-end"
+          >
+            <div
+              class="d-flex align-items-center text-decoration-none dropdown-toggle"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="color: black"
+            >
+              <img
+                src="/public/img/idioma.svg"
+                alt="idioma"
+                width="21"
+                height="21"
+                class="rounded-circle me-2"
+              />
+              PT-BR
+            </div>
+
+            <ul
+              class="dropdown-menu text-small"
+              aria-labelledby="dropdownUser1"
+            >
+              <li><a class="dropdown-item" href="#">PT-PT</a></li>
+            </ul>
+          </div>
+
+          <div class="user float-md-start">
+            <div class="">
+              <p>Bem vindo!</p>
+              <span>alguem12@galoascience.com</span>
+            </div>
+            <!-- <div>
+            
+         
+            </div> -->
+            <button
+              type="button"
+              style="width: 40px; height: 40px"
+              class="position-relative border-0"
+            >
+              <img
+                src="https://github.com/mdo.png"
+                alt="perfil alguem12"
+                width="40px"
+                height="40px"
+                class="rounded-circle me-2"
+              />
+              <span
+                class="position-absolute info translate-middle badge rounded-pill bg-danger"
+              >
+                2
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </div>
+        </header>
+        <!-- Cabecalho -->
+
+        <div id="container-geral" class="container p-5">
+          <!-- Informacao geral -->
+          <section id="info-geral" class="row justify-content-center">
+            <div class="info-geral-video col-8">
+              <h1>
+                Análise sensorial de preparações funcionais desenvolvidas para
+                escolares entre 09 e 15 anos, do município de Campinas/SP
+              </h1>
+
+              <div class="video">
+                <!-- <img
+                  src="/public/img/video.png"
+                  class="img-fluid"
+                  width="1080"
+                  height="450"
+                  alt="Minha Figura"
+                /> -->
+                <iframe
+                  width="900"
+                  height="450"
+                  src="https://www.youtube.com/embed/d9Gd418291M"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="info-geral-detalhes col-3">
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-primary m-1" href="#" role="button">
+                  <img src="/public/img/download.svg" alt="favoritos" />
+                  Download
+                </a>
+                <button class="btn btn-primary m-1" type="button">
+                  <img src="/public/img/start.svg" alt="favoritos" />
+                </button>
+                <button class="btn btn-primary m-1" type="button">
+                  <img src="/public/img/doi.svg" alt="" />
+                </button>
+              </div>
+              <p class="mt-1 text-end">COMO CITAR ESSE TRABALHO?</p>
+
+              <section class="detalhes card">
+                <h3>Detalhes</h3>
+                <div class="overflow-auto">
+                  <p>
+                    Tipo de Apresentação <strong> Pôster </strong> Eixo
+                    temático:
+                    <strong>Alimentação e saúde (AS)</strong> Palavras-chaves:
+                    <strong>
+                      Alimentos funcionais, alimentação escolar.
+                    </strong>
+                  </p>
+
+                  <p>
+                    <strong> Autores: </strong>
+                    <br />
+                    Galileo Galilei¹
+                    <br />
+                    Berta Lange de Morretes²
+                    <br />
+                    Isaac Newton³
+                    <br />
+                    Cesar Lattes¹
+                    <br />
+                    Stephen Hawking⁴
+                  </p>
+
+                  <p class="faculdades">
+                    ¹Universidade Estadual de Campinas
+                    <br />
+                    ²Universidade de São Paulo
+                    <br />
+                    ³Instituto Nacional de Pesquisas Espaciais
+                    <br />
+                    ⁴Universidade Federal do Rio de Janeiro
+                  </p>
+                </div>
+              </section>
+            </div>
+          </section>
+          <!-- Informacao geral -->
+
+          <!-- Resumo -->
+          <article
+            id="resumo"
+            onclick="leiaMais()"
+            class="resumo-card card mt-5 row justify-content-center"
+          >
+            <h3>Resumo</h3>
+            <p>
+              Lorem ipsum dictum feugiat ad aliquet, suscipit eros quisque proin
+              suscipit lacus, ac bibendum commodo vel. vitae pretium vulputate
+              taciti quisque libero tempor imperdiet aptent fusce congue, id
+              nibh lacinia aliquam lacus nisi ullamcorper metus semper, commodo
+              consequat at ante ullamcorper convallis sollicitudin himenaeos
+              integer. metus et taciti et sociosqu mollis iaculis, euismod
+              tristique mauris imperdiet a curabitur adipiscing, blandit nam
+              <span id="pontos"> ... <span> ver mais </span></span>
+              <span id="mais">
+                porttitor tortor leo. dui varius consectetur gravida magna
+                dapibus aliquam mollis bibendum condimentum turpis nulla hac,
+                dui dapibus mi nam fermentum blandit augue interdum aliquet urna
+                fames. velit nibh elit lorem nibh fringilla aliquam sit class
+                nullam massa, pulvinar nostra duis morbi at scelerisque molestie
+                taciti arcu ut, praesent leo sit taciti tristique malesuada duis
+                est quam.
+                <br />
+                Luctus cras nam torquent rhoncus class egestas aliquam eget,
+                congue habitasse ante rhoncus amet taciti habitant rutrum
+                luctus, ullamcorper phasellus tortor a varius placerat
+                suspendisse. pellentesque eleifend primis porta in praesent
+                nullam morbi, turpis tempor semper sodales congue dolor,
+                sagittis feugiat aenean pellentesque per posuere. suscipit
+                libero ipsum leo tempus magna mauris odio donec molestie erat
+                aptent pretium, elit nisl porta odio id scelerisque congue
+                tempor platea dictum aliquet. velit a porttitor potenti lobortis
+                fames bibendum taciti suscipit nunc commodo morbi urna,
+                suspendisse orci torquent vivamus et dapibus libero vestibulum
+                nostra arcu eget, volutpat imperdiet velit maecenas suspendisse
+                donec iaculis nisl pulvinar venenatis sagittis.
+                <br />
+                Viverra vulputate nostra taciti ultricies facilisis condimentum
+                nec elit, quisque non senectus platea urna aliquet vulputate
+                sapien, turpis lobortis feugiat vulputate pulvinar accumsan
+                odio. porttitor est lacinia non venenatis mi suscipit amet nec
+                felis urna consectetur turpis dui, rutrum lacinia egestas
+                habitant lobortis condimentum nisi dictumst suscipit arcu fames
+                eros eu, ornare aliquam sodales vel leo aenean diam praesent
+                cubilia sit varius quisque. lorem neque porta erat eleifend
+                metus suscipit, porta hendrerit tortor id etiam.
+                <br />
+              </span>
+            </p>
+          </article>
+          <!-- Resumo -->
+
+          <!-- Discussoes -->
+          <section id="discussoes" class="card mt-5">
+            <h3>Discussões</h3>
+
+            <form id="formulario" class="mx-4 hide">
+              <p>
+                Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
+                autores!
+              </p>
+              <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="assunto"
+                  id="assunto"
+                  autofocus
+                  placeholder="Defina um tópico sucinto para notificar os autores..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="conteudo" class="form-label">Conteúdo</label>
+                <input name="conteudo" type="hidden" />
+                <div id="editor" style="height: 131px"></div>
+                <div
+                  id="toolbar"
+                  class="d-flex justify-content-between bg-secondary p-0"
+                >
+                  <!-- Add buttons as you would before -->
+                  <div>
+                    <button type="button" class="ql-bold"></button>
+                    <button type="button" class="ql-italic"></button>
+                  </div>
+                  <!-- But you can also add your own -->
+                  <button
+                    id="btn-enviar"
+                    onclick="enviar()"
+                    class=""
+                    type="button"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div id="criar-topico" class="criar-topico border-bottom mx-4">
+              <h1>Compartilhe suas ideias ou dúvidas com os autores!</h1>
+
+              <div class="d-flex mt-3">
+                <img class="mx-3" src="/public/img/icone1.svg" alt="icones" />
+                <img class="mx-3" src="/public/img/icone2.svg" alt="icones" />
+                <img class="mx-3" src="/public/img/icone3.svg" alt="icones" />
+              </div>
+              <p class="mt-3">
+                Sabia que o maior estímulo no desenvolvimento científico e
+                cultural é a curiosidade? Deixe seus questionamentos ou
+                sugestões para o autor!
+              </p>
+              <button
+                id="btn-criar-topico"
+                class="btn btn-primary"
+                type="button"
+                onclick="criarTopico()"
+              >
+                <img
+                  class="mx-3"
+                  width="15px"
+                  height="15px"
+                  src="/public/img/plus-64.png"
+                  alt="criar um novo topico"
+                />
+                <span> criar tópico </span>
+              </button>
+            </div>
+            <div
+              id="criar-topico-enviado"
+              class="criar-topico border-bottom mx-4 hide"
+            >
+              <h1>Seu tópico foi enviado com sucesso! :D</h1>
+
+              <p class="mt-3">
+                Agradecemos por sua contribuição, uma notificação será enviada
+                ao seu email assim que seu tópico for respondido!
+              </p>
+
+              <button
+                id="btn-criar-topico"
+                class="btn btn-primary"
+                type="button"
+                onclick="criarTopico()"
+              >
+                <img
+                  class="mx-3"
+                  width="15px"
+                  height="15px"
+                  src="/public/img/plus-64.png"
+                  alt="criar um novo topico"
+                />
+                <span> criar novo tópico </span>
+              </button>
+            </div>
+
+            <div id="respostas" class="respostas mt-5">
+              <div id="resposta-card" class="resposta-card card shadow mt-3">
+                <h2 class="pt-3 px-3">Assunto da pergunta aparece aqui</h2>
+
+                <p class="autor px-3">Carlos Henrique Santos</p>
+
+                <p class="resposta-texto px-3">
+                  Comecinho da pergunta aparece aqui resente relato inscreve-se
+                  no campo da análise da dimensão e impacto de processo
+                  formativo situado impacto de processo
+                  <span id="resposta-pontos"> ... </span>
+
+                  <span id="resposta-mais">
+                    formativo processo resente relato inscreve-se no campo da
+                    análise da dimensão e impacto de processo formativo situado
+                    impacto de processo formativo processo?
+                  </span>
+                </p>
+
+                <div class="resposta-card-info pb-3">
+                  <span class="mr-5">
+                    <img
+                      src="/public/img/ellipsis-icon-13.svg"
+                      class="img-fluid"
+                      width="20px"
+                      height="20px"
+                      alt=""
+                    />
+                  </span>
+
+                  <span class="resposta-card-like badge mr-2">
+                    <img
+                      src="/public/img/caracao.svg"
+                      class="img-fluid"
+                      width="16px"
+                      height="16px"
+                      alt=""
+                    />
+                  </span>
+                  <span>1 like</span>
+                  <span>1 respostas</span>
+                </div>
+              </div>
+
+              <div id="resposta-card" class="resposta-card card shadow mt-3">
+                <h2 class="pt-3 px-3">Assunto da pergunta aparece aqui</h2>
+
+                <p class="autor px-3">Carlos Henrique Santos</p>
+
+                <p class="resposta-texto px-3">
+                  Comecinho da pergunta aparece aqui resente relato inscreve-se
+                  no campo da análise da dimensão e impacto de processo
+                  formativo situado impacto de processo
+                  <span id="resposta-pontos"> ... </span>
+
+                  <span id="resposta-mais">
+                    formativo processo resente relato inscreve-se no campo da
+                    análise da dimensão e impacto de processo formativo situado
+                    impacto de processo formativo processo?
+                  </span>
+                </p>
+
+                <div class="resposta-card-info pb-3">
+                  <span class="">
+                    <img
+                      src="/public/img/ellipsis-icon-13.svg"
+                      class="img-fluid"
+                      width="20px"
+                      height="20px"
+                      alt=""
+                    />
+                  </span>
+
+                  <span class="resposta-card-like badge">
+                    <img
+                      src="/public/img/caracao.svg"
+                      class="img-fluid"
+                      width="16px"
+                      height="16px"
+                      alt=""
+                    />
+                  </span>
+                  <span>1 like</span>
+                  <span>4 respostas</span>
+                </div>
+
+                <div id="resposta-resposta" class="resposta-resposta card hide">
+                  <div
+                    class="autor pt-3 px-3 d-flex justify-content-center align-items-center"
+                  >
+                    <h5>Carlos Henrique Santos</h5>
+                    <span>
+                      Autor
+                      <img src="/public/img/certinho_laranja.svg" alt="" />
+                    </span>
+                  </div>
+                  <p class="pt-3 px-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam, voluptatum? Repellendus voluptatibus nesciunt
+                    commodi facilis temporibus officiis ratione aliquid tempora
+                    debitis corporis, error nostrum ab recusandae rem dolorem
+                    fugit unde!
+                  </p>
+                </div>
+
+                <div id="resposta-resposta" class="resposta-resposta card hide">
+                  <div
+                    class="autor pt-3 px-3 d-flex justify-content-center align-items-center"
+                  >
+                    <h5>Carlos Henrique Santos</h5>
+                    <span>
+                      Autor
+                      <img src="/public/img/certinho_laranja.svg" alt="" />
+                    </span>
+                  </div>
+                  <p class="pt-3 px-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam, voluptatum? Repellendus voluptatibus nesciunt
+                    commodi facilis temporibus officiis ratione aliquid tempora
+                    debitis corporis, error nostrum ab recusandae rem dolorem
+                    fugit unde!
+                  </p>
+                </div>
+                <div id="resposta-resposta" class="resposta-resposta card hide">
+                  <div
+                    class="autor pt-3 px-3 d-flex justify-content-center align-items-center"
+                  >
+                    <h5>Carlos Henrique Santos</h5>
+                    <span>
+                      Autor
+                      <img src="/public/img/certinho_laranja.svg" alt="" />
+                    </span>
+                  </div>
+                  <p class="pt-3 px-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam, voluptatum? Repellendus voluptatibus nesciunt
+                    commodi facilis temporibus officiis ratione aliquid tempora
+                    debitis corporis, error nostrum ab recusandae rem dolorem
+                    fugit unde!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Discussoes -->
+        </div>
+
+        <footer>
+          <div>
+            <img
+              src="/public/img/Footer_Galoa.png"
+              class="img-thumbnail"
+              alt=""
+            />
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/accordion.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <script src="../js/criarTopico.js" crossorigin="anonymous"></script>
+  </body>
+</html>

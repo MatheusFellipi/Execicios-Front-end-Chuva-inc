@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 16px "Quicksand", Arial, sans-serif;
+  height: 100vh;
+  color: #121214;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    margin-left: 250px;
+  }
+}
+
+#wrapper {
+  padding-left: var(--bs-gutter-x, 0rem) !important;
+}
+
+#container-geral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* informacao video detalhes */
+#info-geral {
+  display: flex;
+}
+#info-geral .info-geral-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#info-geral .info-geral-video h1 {
+  font: 20px "Roboto", Arial, sans-serif;
+  font-weight: 900;
+  color: #ed7839;
+}
+
+#info-geral .info-geral-detalhes {
+  width: 300px;
+  max-width: 300px;
+  max-height: 500;
+}
+
+.detalhes h3,
+.detalhes p {
+  padding: 0 2rem 0 2rem;
+}
+
+.detalhes h3 {
+  font: 20px "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  height: 45px;
+  padding-top: 0.6rem;
+  background-color: #fdf1eb;
+}
+
+.detalhes {
+  max-height: 450px;
+}
+.video {
+  max-width: 800px;
+  max-height: 450px;
+}
+.video img {
+}
+
+.info-geral-detalhes > p {
+  color: #ed7839;
+  font: 14px "Roboto", Arial, sans-serif;
+  font-weight: 700;
+}
+
+#info-geral .info-geral-detalhes button,
+#info-geral .info-geral-detalhes a {
+  background-color: #ed7839;
+  border-color: #ed7839;
+}
+
+#info-geral .info-geral-detalhes .faculdades {
+  font: 14px "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 14px;
+  color: #c5c5c5;
+}
+/* Informacao video detalhes */
+
+/* Resumo */
+#mais {
+  display: none;
+}
+
+#pontos span {
+  font-weight: 700;
+  color: #ed7839;
+}
+
+.resumo-card {
+  width: 79%;
+  cursor: pointer;
+  text-align: justify;
+}
+
+.resumo-card h3 {
+  background-color: #fdf1eb;
+  padding: 0.6rem 1rem 0 1rem;
+  max-height: 45px;
+  height: 45px;
+  line-height: 25px;
+  font: 20px "Roboto", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.resumo-card p {
+  padding: 1rem;
+  font: 14px "Quicksand", Arial, sans-serif;
+  font-weight: 500;
+}
+
+/* Resumo */
+
+/* Discussões */
+
+#discussoes {
+  width: 79%;
+}
+
+#discussoes .criar-topico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#discussoes .criar-topico h1 {
+  font: 18px "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  line-height: 21.09px;
+  color: #ed7839;
+}
+
+#discussoes .criar-topico p {
+  width: 600px;
+  font: 14px "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 19.25px;
+  text-align: center;
+}
+
+#discussoes .criar-topico button {
+  background-image: linear-gradient(180deg, #ffb455 0%, #ed7839 100%);
+  border: #ed7839;
+  font: 14px "Quicksand", Arial, sans-serif;
+  font-weight: 700;
+  width: 235.15px;
+  height: 32px;
+  margin-bottom: -1rem;
+}
+
+#discussoes h3 {
+  background-color: #fdf1eb;
+  padding: 0.6rem 1rem 0 1rem;
+  max-height: 45px;
+  height: 45px;
+  line-height: 25px;
+  font: 20px "Roboto", Arial, sans-serif;
+  font-weight: 500;
+}
+
+#discussoes .respostas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+}
+
+#discussoes .resposta-card {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#discussoes .resposta-card h2 {
+  font: 16px "Quicksand", Arial, sans-serif;
+  font-weight: 700;
+  color: #ed7839;
+}
+
+#discussoes .resposta-card .autor {
+  font: 12px "Quicksand", Arial, sans-serif;
+  font-weight: 700;
+  width: 100%;
+}
+.autor h5 {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.autor span {
+  text-align: end;
+  color: #ed7839;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+}
+
+#discussoes .resposta-card .resposta-texto {
+  font: 16px "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 17.5px;
+}
+
+.resposta-card-info span {
+  font: 14px "Segoe UI", Arial, sans-serif;
+  font-weight: 350;
+  line-height: 18.62px;
+  color: #757575;
+  margin: 0 0.5rem 0 0.5rem;
+  transition: all 0.2s;
+}
+
+.resposta-card-like {
+  background-color: #ed7839;
+}
+
+#resposta-resposta {
+  width: 100%;
+}
+
+#resposta-mais {
+  display: none;
+}
+
+#formulario label {
+  color: #ed7839;
+  font: 16px "Roboto", Arial, sans-serif;
+  font-weight: 700;
+}
+
+#formulario p {
+  font-weight: 400;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
+#toolbar {
+  height: 31px !important;
+}
+
+#btn-enviar {
+  font: 16px "Quicksand", Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 206px;
+  color: white;
+  height: 100%;
+  background-color: #ed7839;
+  height: 31px !important;
+}
+
+#toolbar > div {
+  width: 87%;
+  height: 31px;
+}
+
+.bg-secondary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-secondary-rgb), 0.2) !important;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+#mask {
+  z-index: 90000;
+  background-color: #e7e7e7c5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#mask p {
+  margin-top: 1rem;
+  font: 16px "Quicksand", Arial, sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#mask button {
+  border: 0;
+  color: #ed7839;
+  font: 14px "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* Discussões */
+
+footer {
+  width: 79%;
+}
+
+footer .img-thumbnail {
+  border: 0;
+}
+
+footer div {
+  padding: 1rem;
+}
+
+.show {
+  display: inline;
+}
+.hide {
+  display: none !important;
+}
+.info {
+  top: 2px !important;
+  left: 75% !important;
+  color: white !important;
+  font: 12px "Roboto", Arial, sans-serif !important;
+  font-weight: 700 !important;
+  width: 14px;
+  height: 14px;
+  text-align: center !important;
+}
